@@ -9,24 +9,31 @@ if (hamburger == false) {
   $('.header-right .fa-bars').click(
     function(){
 
-      $('.hamburger-menu').addClass('active')
+      $('.hamburger-menu').addClass('active');
+
+      hamburger = true;
 
     }
-
-    hamburger = true;
   );
 
-} else if (hamburger == true) {
 
-  $('.hamburger-menu .fa-times').click(
+
+}
+
+// NASCONDO L'HAMBURGER MENU
+
+else if (hamburger == true) {
+
+  $('.fa-times').click(
     function(){
 
-      $('.hamburger-menu').hide();
+      $('.hamburger-menu').removeClass('active');
+
+      hamburger = false;
 
     }
-
-    hamburger = false;
   );
+
 
 }
 
