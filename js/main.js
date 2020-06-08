@@ -16,7 +16,7 @@ if (hamburger == false) {
     hamburger = true;
   );
 
-} else if (hamburger == true){
+} else if (hamburger == true) {
 
   $('.hamburger-menu .fa-times').click(
     function(){
