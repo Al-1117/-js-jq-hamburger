@@ -1,41 +1,40 @@
 
 
-var hamburger = false;
+// var hamburger = false;
 
 // Seleziono il collegamento all'hamburger menu e gli aggiungo il click
 // MOSTRO L'HAMBURGER MENU
 
-if (hamburger == false) {
-  $('.header-right .fa-bars').click(
+// if (hamburger == false) {
+  $('.header-right > a').click(
     function(){
 
       $('.hamburger-menu').addClass('active');
-
-      hamburger = true;
+      //
+      // hamburger = true;
 
     }
   );
 
 
-
-}
+// }
 
 // NASCONDO L'HAMBURGER MENU
 
-else if (hamburger == true) {
+// else if (hamburger == true) {
 
-  $('.fa-times').click(
+  $('.hamburger-menu > a').click(
     function(){
 
       $('.hamburger-menu').removeClass('active');
 
-      hamburger = false;
+      // hamburger = false;
 
     }
   );
 
 
-}
+// }
 
 //
 // $('.header-right .fa-bars').click(
